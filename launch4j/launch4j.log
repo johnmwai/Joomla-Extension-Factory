@@ -1,0 +1,465 @@
+
+
+CmdLine:	C:\Users\John Mwai\Documents\NetBeansProjects\Enterprise Projects\Joomla Extension Factory\launch4j\Joomla Extension Factory.exe --l4j-debug
+WOW64:		no
+Check launcher:	 (n/a)
+64-bit search:	SOFTWARE\JavaSoft\Java Runtime Environment...
+32-bit search:	SOFTWARE\JavaSoft\Java Runtime Environment...
+Ignore:		SOFTWARE\JavaSoft\Java Runtime Environment\1.7
+Match:		SOFTWARE\JavaSoft\Java Runtime Environment\1.7.0_17
+64-bit search:	SOFTWARE\JavaSoft\Java Development Kit...
+32-bit search:	SOFTWARE\JavaSoft\Java Development Kit...
+Ignore:		SOFTWARE\JavaSoft\Java Development Kit\1.7
+Ignore:		SOFTWARE\JavaSoft\Java Development Kit\1.7.0_06
+Ignore:		SOFTWARE\JavaSoft\Java Development Kit\1.7.0_17
+Check launcher:	C:\Program Files\Java\jre7\bin\javaw.exe (OK)
+Unlink:		C:\Program Files\Java\jre7\launch4j-tmp\launch4j.exe
+Unlink:		C:\Program Files\Java\jre7\launch4j-tmp\launch4j.exe.manifest
+Copy:		C:\Program Files\Java\jre7\bin\javaw.exe -> C:\Program Files\Java\jre7\launch4j-tmp\Joomla Extension Factory.exe
+Launcher:	C:\Program Files\Java\jre7\bin\javaw.exe
+Launcher args:	-jar "C:\Users\John Mwai\Documents\NetBeansProjects\Enterprise Projects\Joomla Extension Factory\launch4j\Joomla Extension Factory.exe"
+Args length:	135/32768 chars
+Exit code:	1
+
+
+CmdLine:	C:\Users\John Mwai\Documents\NetBeansProjects\Enterprise Projects\Joomla Extension Factory\launch4j\Joomla Extension Factory.exe --l4j-debug
+WOW64:		no
+Working dir:	C:\Users\John Mwai\Documents\NetBeansProjects\Enterprise Projects\Joomla Extension Factory\launch4j\..\
+Check launcher:	 (n/a)
+64-bit search:	SOFTWARE\JavaSoft\Java Runtime Environment...
+32-bit search:	SOFTWARE\JavaSoft\Java Runtime Environment...
+Ignore:		SOFTWARE\JavaSoft\Java Runtime Environment\1.7
+Match:		SOFTWARE\JavaSoft\Java Runtime Environment\1.7.0_17
+64-bit search:	SOFTWARE\JavaSoft\Java Development Kit...
+32-bit search:	SOFTWARE\JavaSoft\Java Development Kit...
+Ignore:		SOFTWARE\JavaSoft\Java Development Kit\1.7
+Ignore:		SOFTWARE\JavaSoft\Java Development Kit\1.7.0_06
+Ignore:		SOFTWARE\JavaSoft\Java Development Kit\1.7.0_17
+Check launcher:	C:\Program Files\Java\jre7\bin\javaw.exe (OK)
+Unlink:		C:\Program Files\Java\jre7\launch4j-tmp\launch4j.exe
+Unlink:		C:\Program Files\Java\jre7\launch4j-tmp\launch4j.exe.manifest
+Copy:		C:\Program Files\Java\jre7\bin\javaw.exe -> C:\Program Files\Java\jre7\launch4j-tmp\Joomla Extension Factory.exe
+Launcher:	C:\Program Files\Java\jre7\bin\javaw.exe
+Launcher args:	-jar "C:\Users\John Mwai\Documents\NetBeansProjects\Enterprise Projects\Joomla Extension Factory\launch4j\Joomla Extension Factory.exe"
+Args length:	135/32768 chars
+Exit code:	1
+
+
+CmdLine:	C:\Users\John Mwai\Documents\NetBeansProjects\Enterprise Projects\Joomla Extension Factory\launch4j\Joomla Extension Factory.exe --l4j-debug
+WOW64:		no
+Check launcher:	 (n/a)
+64-bit search:	SOFTWARE\JavaSoft\Java Runtime Environment...
+32-bit search:	SOFTWARE\JavaSoft\Java Runtime Environment...
+Ignore:		SOFTWARE\JavaSoft\Java Runtime Environment\1.7
+Match:		SOFTWARE\JavaSoft\Java Runtime Environment\1.7.0_17
+64-bit search:	SOFTWARE\JavaSoft\Java Development Kit...
+32-bit search:	SOFTWARE\JavaSoft\Java Development Kit...
+Ignore:		SOFTWARE\JavaSoft\Java Development Kit\1.7
+Ignore:		SOFTWARE\JavaSoft\Java Development Kit\1.7.0_06
+Ignore:		SOFTWARE\JavaSoft\Java Development Kit\1.7.0_17
+Check launcher:	C:\Program Files\Java\jre7\bin\javaw.exe (OK)
+Unlink:		C:\Program Files\Java\jre7\launch4j-tmp\launch4j.exe
+Unlink:		C:\Program Files\Java\jre7\launch4j-tmp\launch4j.exe.manifest
+Copy:		C:\Program Files\Java\jre7\bin\javaw.exe -> C:\Program Files\Java\jre7\launch4j-tmp\Joomla Extension Factory.exe
+Launcher:	C:\Program Files\Java\jre7\bin\javaw.exe
+Launcher args:	-jar "C:\Users\John Mwai\Documents\NetBeansProjects\Enterprise Projects\Joomla Extension Factory\launch4j\Joomla Extension Factory.exe"
+Args length:	135/32768 chars
+Exit code:	1
+
+
+CmdLine:	C:\Users\John Mwai\Documents\NetBeansProjects\Enterprise Projects\Joomla Extension Factory\launch4j\Joomla Extension Factory.exe --l4j-debug
+WOW64:		no
+Check launcher:	 (n/a)
+64-bit search:	SOFTWARE\JavaSoft\Java Runtime Environment...
+32-bit search:	SOFTWARE\JavaSoft\Java Runtime Environment...
+Ignore:		SOFTWARE\JavaSoft\Java Runtime Environment\1.7
+Match:		SOFTWARE\JavaSoft\Java Runtime Environment\1.7.0_17
+64-bit search:	SOFTWARE\JavaSoft\Java Development Kit...
+32-bit search:	SOFTWARE\JavaSoft\Java Development Kit...
+Ignore:		SOFTWARE\JavaSoft\Java Development Kit\1.7
+Ignore:		SOFTWARE\JavaSoft\Java Development Kit\1.7.0_06
+Ignore:		SOFTWARE\JavaSoft\Java Development Kit\1.7.0_17
+Check launcher:	C:\Program Files\Java\jre7\bin\javaw.exe (OK)
+Unlink:		C:\Program Files\Java\jre7\launch4j-tmp\launch4j.exe
+Unlink:		C:\Program Files\Java\jre7\launch4j-tmp\launch4j.exe.manifest
+Copy:		C:\Program Files\Java\jre7\bin\javaw.exe -> C:\Program Files\Java\jre7\launch4j-tmp\Joomla Extension Factory.exe
+Add classpath:	lib\Fuscard_Libraries.jar
+Add classpath:	lib\mysql-connector-java-5.1.16-bin.jar
+Launcher:	C:\Program Files\Java\jre7\bin\javaw.exe
+Launcher args:	-classpath "C:\Users\John Mwai\Documents\NetBeansProjects\Enterprise Projects\Joomla Extension Factory\launch4j\Joomla Extension Factory.exe;lib\Fuscard_Libraries.jar;lib\mysql-connector-java-5.1.16-bin.jar" factory.codegen.test.AllSystems
+Args length:	239/32768 chars
+Exit code:	1
+
+
+CmdLine:	C:\Users\John Mwai\Documents\NetBeansProjects\Enterprise Projects\Joomla Extension Factory\launch4j\Joomla Extension Factory.exe --l4j-debug
+WOW64:		no
+Check launcher:	 (n/a)
+64-bit search:	SOFTWARE\JavaSoft\Java Runtime Environment...
+32-bit search:	SOFTWARE\JavaSoft\Java Runtime Environment...
+Ignore:		SOFTWARE\JavaSoft\Java Runtime Environment\1.7
+Match:		SOFTWARE\JavaSoft\Java Runtime Environment\1.7.0_17
+64-bit search:	SOFTWARE\JavaSoft\Java Development Kit...
+32-bit search:	SOFTWARE\JavaSoft\Java Development Kit...
+Ignore:		SOFTWARE\JavaSoft\Java Development Kit\1.7
+Ignore:		SOFTWARE\JavaSoft\Java Development Kit\1.7.0_06
+Ignore:		SOFTWARE\JavaSoft\Java Development Kit\1.7.0_17
+Check launcher:	C:\Program Files\Java\jre7\bin\javaw.exe (OK)
+Unlink:		C:\Program Files\Java\jre7\launch4j-tmp\launch4j.exe
+Unlink:		C:\Program Files\Java\jre7\launch4j-tmp\launch4j.exe.manifest
+Copy:		C:\Program Files\Java\jre7\bin\javaw.exe -> C:\Program Files\Java\jre7\launch4j-tmp\Joomla Extension Factory.exe
+Add classpath:	lib\Fuscard_Libraries.jar
+Add classpath:	lib\mysql-connector-java-5.1.16-bin.jar
+Launcher:	C:\Program Files\Java\jre7\bin\javaw.exe
+Launcher args:	-classpath "C:\Users\John Mwai\Documents\NetBeansProjects\Enterprise Projects\Joomla Extension Factory\launch4j\Joomla Extension Factory.exe;lib\Fuscard_Libraries.jar;lib\mysql-connector-java-5.1.16-bin.jar" factory.codegen.app.AllSystems
+Args length:	238/32768 chars
+
+
+CmdLine:	C:\Users\John Mwai\Documents\NetBeansProjects\Enterprise Projects\Joomla Extension Factory\launch4j\Joomla Extension Factory.exe --l4j-debug
+WOW64:		no
+Check launcher:	 (n/a)
+64-bit search:	SOFTWARE\JavaSoft\Java Runtime Environment...
+32-bit search:	SOFTWARE\JavaSoft\Java Runtime Environment...
+Ignore:		SOFTWARE\JavaSoft\Java Runtime Environment\1.7
+Match:		SOFTWARE\JavaSoft\Java Runtime Environment\1.7.0_17
+64-bit search:	SOFTWARE\JavaSoft\Java Development Kit...
+32-bit search:	SOFTWARE\JavaSoft\Java Development Kit...
+Ignore:		SOFTWARE\JavaSoft\Java Development Kit\1.7
+Ignore:		SOFTWARE\JavaSoft\Java Development Kit\1.7.0_06
+Ignore:		SOFTWARE\JavaSoft\Java Development Kit\1.7.0_17
+Check launcher:	C:\Program Files\Java\jre7\bin\javaw.exe (OK)
+Unlink:		C:\Program Files\Java\jre7\launch4j-tmp\launch4j.exe
+Unlink:		C:\Program Files\Java\jre7\launch4j-tmp\launch4j.exe.manifest
+Copy:		C:\Program Files\Java\jre7\bin\javaw.exe -> C:\Program Files\Java\jre7\launch4j-tmp\Joomla Extension Factory.exe
+Add classpath:	lib\Fuscard_Libraries.jar
+Add classpath:	lib\mysql-connector-java-5.1.16-bin.jar
+Launcher:	C:\Program Files\Java\jre7\bin\javaw.exe
+Launcher args:	-classpath "C:\Users\John Mwai\Documents\NetBeansProjects\Enterprise Projects\Joomla Extension Factory\launch4j\Joomla Extension Factory.exe;lib\Fuscard_Libraries.jar;lib\mysql-connector-java-5.1.16-bin.jar" factory.codegen.app.AllSystems
+Args length:	238/32768 chars
+
+
+CmdLine:	C:\Users\John Mwai\Documents\NetBeansProjects\Enterprise Projects\Joomla Extension Factory\launch4j\Joomla Extension Factory.exe --l4j-debug
+WOW64:		no
+Check launcher:	 (n/a)
+64-bit search:	SOFTWARE\JavaSoft\Java Runtime Environment...
+32-bit search:	SOFTWARE\JavaSoft\Java Runtime Environment...
+Ignore:		SOFTWARE\JavaSoft\Java Runtime Environment\1.7
+Match:		SOFTWARE\JavaSoft\Java Runtime Environment\1.7.0_17
+64-bit search:	SOFTWARE\JavaSoft\Java Development Kit...
+32-bit search:	SOFTWARE\JavaSoft\Java Development Kit...
+Ignore:		SOFTWARE\JavaSoft\Java Development Kit\1.7
+Ignore:		SOFTWARE\JavaSoft\Java Development Kit\1.7.0_06
+Ignore:		SOFTWARE\JavaSoft\Java Development Kit\1.7.0_17
+Check launcher:	C:\Program Files\Java\jre7\bin\javaw.exe (OK)
+Unlink:		C:\Program Files\Java\jre7\launch4j-tmp\launch4j.exe
+Unlink:		C:\Program Files\Java\jre7\launch4j-tmp\launch4j.exe.manifest
+Copy:		C:\Program Files\Java\jre7\bin\javaw.exe -> C:\Program Files\Java\jre7\launch4j-tmp\Joomla Extension Factory.exe
+Add classpath:	lib\Fuscard_Libraries.jar
+Add classpath:	lib\mysql-connector-java-5.1.16-bin.jar
+Launcher:	C:\Program Files\Java\jre7\bin\javaw.exe
+Launcher args:	-classpath "C:\Users\John Mwai\Documents\NetBeansProjects\Enterprise Projects\Joomla Extension Factory\launch4j\Joomla Extension Factory.exe;lib\Fuscard_Libraries.jar;lib\mysql-connector-java-5.1.16-bin.jar" factory.codegen.app.AllSystems
+Args length:	238/32768 chars
+
+
+CmdLine:	C:\Users\John Mwai\Documents\NetBeansProjects\Enterprise Projects\Joomla Extension Factory\launch4j\Joomla Extension Factory.exe --l4j-debug
+WOW64:		no
+Check launcher:	 (n/a)
+64-bit search:	SOFTWARE\JavaSoft\Java Runtime Environment...
+32-bit search:	SOFTWARE\JavaSoft\Java Runtime Environment...
+Ignore:		SOFTWARE\JavaSoft\Java Runtime Environment\1.7
+Match:		SOFTWARE\JavaSoft\Java Runtime Environment\1.7.0_17
+64-bit search:	SOFTWARE\JavaSoft\Java Development Kit...
+32-bit search:	SOFTWARE\JavaSoft\Java Development Kit...
+Ignore:		SOFTWARE\JavaSoft\Java Development Kit\1.7
+Ignore:		SOFTWARE\JavaSoft\Java Development Kit\1.7.0_06
+Ignore:		SOFTWARE\JavaSoft\Java Development Kit\1.7.0_17
+Check launcher:	C:\Program Files\Java\jre7\bin\javaw.exe (OK)
+Unlink:		C:\Program Files\Java\jre7\launch4j-tmp\launch4j.exe
+Unlink:		C:\Program Files\Java\jre7\launch4j-tmp\launch4j.exe.manifest
+Copy:		C:\Program Files\Java\jre7\bin\javaw.exe -> C:\Program Files\Java\jre7\launch4j-tmp\Joomla Extension Factory.exe
+Add classpath:	lib\Fuscard_Libraries.jar
+Add classpath:	lib\mysql-connector-java-5.1.16-bin.jar
+Launcher:	C:\Program Files\Java\jre7\bin\javaw.exe
+Launcher args:	-classpath "C:\Users\John Mwai\Documents\NetBeansProjects\Enterprise Projects\Joomla Extension Factory\launch4j\Joomla Extension Factory.exe;lib\Fuscard_Libraries.jar;lib\mysql-connector-java-5.1.16-bin.jar" factory.codegen.app.AllSystems
+Args length:	238/32768 chars
+
+
+CmdLine:	C:\Users\John Mwai\Documents\NetBeansProjects\Enterprise Projects\Joomla Extension Factory\launch4j\Joomla Extension Factory.exe --l4j-debug
+WOW64:		no
+Check launcher:	 (n/a)
+64-bit search:	SOFTWARE\JavaSoft\Java Runtime Environment...
+32-bit search:	SOFTWARE\JavaSoft\Java Runtime Environment...
+Ignore:		SOFTWARE\JavaSoft\Java Runtime Environment\1.7
+Match:		SOFTWARE\JavaSoft\Java Runtime Environment\1.7.0_17
+64-bit search:	SOFTWARE\JavaSoft\Java Development Kit...
+32-bit search:	SOFTWARE\JavaSoft\Java Development Kit...
+Ignore:		SOFTWARE\JavaSoft\Java Development Kit\1.7
+Ignore:		SOFTWARE\JavaSoft\Java Development Kit\1.7.0_06
+Ignore:		SOFTWARE\JavaSoft\Java Development Kit\1.7.0_17
+Check launcher:	C:\Program Files\Java\jre7\bin\javaw.exe (OK)
+Unlink:		C:\Program Files\Java\jre7\launch4j-tmp\launch4j.exe
+Unlink:		C:\Program Files\Java\jre7\launch4j-tmp\launch4j.exe.manifest
+Copy:		C:\Program Files\Java\jre7\bin\javaw.exe -> C:\Program Files\Java\jre7\launch4j-tmp\Joomla Extension Factory.exe
+Add classpath:	lib\Fuscard_Libraries.jar
+Add classpath:	lib\mysql-connector-java-5.1.16-bin.jar
+Launcher:	C:\Program Files\Java\jre7\bin\javaw.exe
+Launcher args:	-classpath "C:\Users\John Mwai\Documents\NetBeansProjects\Enterprise Projects\Joomla Extension Factory\launch4j\Joomla Extension Factory.exe;lib\Fuscard_Libraries.jar;lib\mysql-connector-java-5.1.16-bin.jar" factory.codegen.app.AllSystems
+Args length:	238/32768 chars
+Exit code:	1
+
+
+CmdLine:	C:\Users\John Mwai\Documents\NetBeansProjects\Enterprise Projects\Joomla Extension Factory\launch4j\Joomla Extension Factory.exe --l4j-debug
+WOW64:		no
+Check launcher:	 (n/a)
+64-bit search:	SOFTWARE\JavaSoft\Java Runtime Environment...
+32-bit search:	SOFTWARE\JavaSoft\Java Runtime Environment...
+Ignore:		SOFTWARE\JavaSoft\Java Runtime Environment\1.7
+Match:		SOFTWARE\JavaSoft\Java Runtime Environment\1.7.0_17
+64-bit search:	SOFTWARE\JavaSoft\Java Development Kit...
+32-bit search:	SOFTWARE\JavaSoft\Java Development Kit...
+Ignore:		SOFTWARE\JavaSoft\Java Development Kit\1.7
+Ignore:		SOFTWARE\JavaSoft\Java Development Kit\1.7.0_06
+Ignore:		SOFTWARE\JavaSoft\Java Development Kit\1.7.0_17
+Check launcher:	C:\Program Files\Java\jre7\bin\javaw.exe (OK)
+Unlink:		C:\Program Files\Java\jre7\launch4j-tmp\launch4j.exe
+Unlink:		C:\Program Files\Java\jre7\launch4j-tmp\launch4j.exe.manifest
+Copy:		C:\Program Files\Java\jre7\bin\javaw.exe -> C:\Program Files\Java\jre7\launch4j-tmp\Joomla Extension Factory.exe
+Add classpath:	lib\Fuscard_Libraries.jar
+Add classpath:	lib\mysql-connector-java-5.1.16-bin.jar
+Launcher:	C:\Program Files\Java\jre7\bin\javaw.exe
+Launcher args:	-classpath "C:\Users\John Mwai\Documents\NetBeansProjects\Enterprise Projects\Joomla Extension Factory\launch4j\Joomla Extension Factory.exe;lib\Fuscard_Libraries.jar;lib\mysql-connector-java-5.1.16-bin.jar" factory.codegen.app.AllSystems
+Args length:	238/32768 chars
+Exit code:	1
+
+
+CmdLine:	C:\Users\John Mwai\Documents\NetBeansProjects\Enterprise Projects\Joomla Extension Factory\launch4j\Joomla Extension Factory.exe --l4j-debug
+WOW64:		no
+Check launcher:	 (n/a)
+64-bit search:	SOFTWARE\JavaSoft\Java Runtime Environment...
+32-bit search:	SOFTWARE\JavaSoft\Java Runtime Environment...
+Ignore:		SOFTWARE\JavaSoft\Java Runtime Environment\1.7
+Match:		SOFTWARE\JavaSoft\Java Runtime Environment\1.7.0_17
+64-bit search:	SOFTWARE\JavaSoft\Java Development Kit...
+32-bit search:	SOFTWARE\JavaSoft\Java Development Kit...
+Ignore:		SOFTWARE\JavaSoft\Java Development Kit\1.7
+Ignore:		SOFTWARE\JavaSoft\Java Development Kit\1.7.0_06
+Ignore:		SOFTWARE\JavaSoft\Java Development Kit\1.7.0_17
+Check launcher:	C:\Program Files\Java\jre7\bin\javaw.exe (OK)
+Unlink:		C:\Program Files\Java\jre7\launch4j-tmp\launch4j.exe
+Unlink:		C:\Program Files\Java\jre7\launch4j-tmp\launch4j.exe.manifest
+Copy:		C:\Program Files\Java\jre7\bin\javaw.exe -> C:\Program Files\Java\jre7\launch4j-tmp\Joomla Extension Factory.exe
+Add classpath:	lib\Fuscard_Libraries.jar
+Add classpath:	lib\mysql-connector-java-5.1.16-bin.jar
+Launcher:	C:\Program Files\Java\jre7\bin\javaw.exe
+Launcher args:	-classpath "C:\Users\John Mwai\Documents\NetBeansProjects\Enterprise Projects\Joomla Extension Factory\launch4j\Joomla Extension Factory.exe;lib\Fuscard_Libraries.jar;lib\mysql-connector-java-5.1.16-bin.jar" factory.codegen.app.AllSystems
+Args length:	238/32768 chars
+Exit code:	1
+
+
+CmdLine:	C:\Users\John Mwai\Documents\NetBeansProjects\Enterprise Projects\Joomla Extension Factory\launch4j\Joomla Extension Factory.exe --l4j-debug
+WOW64:		no
+Check launcher:	 (n/a)
+64-bit search:	SOFTWARE\JavaSoft\Java Runtime Environment...
+32-bit search:	SOFTWARE\JavaSoft\Java Runtime Environment...
+Ignore:		SOFTWARE\JavaSoft\Java Runtime Environment\1.7
+Match:		SOFTWARE\JavaSoft\Java Runtime Environment\1.7.0_17
+64-bit search:	SOFTWARE\JavaSoft\Java Development Kit...
+32-bit search:	SOFTWARE\JavaSoft\Java Development Kit...
+Ignore:		SOFTWARE\JavaSoft\Java Development Kit\1.7
+Ignore:		SOFTWARE\JavaSoft\Java Development Kit\1.7.0_06
+Ignore:		SOFTWARE\JavaSoft\Java Development Kit\1.7.0_17
+Check launcher:	C:\Program Files\Java\jre7\bin\javaw.exe (OK)
+Unlink:		C:\Program Files\Java\jre7\launch4j-tmp\launch4j.exe
+Unlink:		C:\Program Files\Java\jre7\launch4j-tmp\launch4j.exe.manifest
+Copy:		C:\Program Files\Java\jre7\bin\javaw.exe -> C:\Program Files\Java\jre7\launch4j-tmp\Joomla Extension Factory.exe
+Add classpath:	lib\Fuscard_Libraries.jar
+Add classpath:	lib\mysql-connector-java-5.1.16-bin.jar
+Launcher:	C:\Program Files\Java\jre7\bin\javaw.exe
+Launcher args:	-classpath "C:\Users\John Mwai\Documents\NetBeansProjects\Enterprise Projects\Joomla Extension Factory\launch4j\Joomla Extension Factory.exe;lib\Fuscard_Libraries.jar;lib\mysql-connector-java-5.1.16-bin.jar" factory.codegen.app.AllSystems
+Args length:	238/32768 chars
+Exit code:	1
+
+
+CmdLine:	C:\Users\John Mwai\Documents\NetBeansProjects\Enterprise Projects\Joomla Extension Factory\launch4j\Joomla Extension Factory.exe --l4j-debug
+WOW64:		no
+Check launcher:	 (n/a)
+64-bit search:	SOFTWARE\JavaSoft\Java Runtime Environment...
+32-bit search:	SOFTWARE\JavaSoft\Java Runtime Environment...
+Ignore:		SOFTWARE\JavaSoft\Java Runtime Environment\1.7
+Match:		SOFTWARE\JavaSoft\Java Runtime Environment\1.7.0_17
+64-bit search:	SOFTWARE\JavaSoft\Java Development Kit...
+32-bit search:	SOFTWARE\JavaSoft\Java Development Kit...
+Ignore:		SOFTWARE\JavaSoft\Java Development Kit\1.7
+Ignore:		SOFTWARE\JavaSoft\Java Development Kit\1.7.0_06
+Ignore:		SOFTWARE\JavaSoft\Java Development Kit\1.7.0_17
+Check launcher:	C:\Program Files\Java\jre7\bin\javaw.exe (OK)
+Unlink:		C:\Program Files\Java\jre7\launch4j-tmp\launch4j.exe
+Unlink:		C:\Program Files\Java\jre7\launch4j-tmp\launch4j.exe.manifest
+Copy:		C:\Program Files\Java\jre7\bin\javaw.exe -> C:\Program Files\Java\jre7\launch4j-tmp\Joomla Extension Factory.exe
+Add classpath:	lib\Fuscard_Libraries.jar
+Add classpath:	lib\mysql-connector-java-5.1.16-bin.jar
+Launcher:	C:\Program Files\Java\jre7\bin\javaw.exe
+Launcher args:	-classpath "C:\Users\John Mwai\Documents\NetBeansProjects\Enterprise Projects\Joomla Extension Factory\launch4j\Joomla Extension Factory.exe;lib\Fuscard_Libraries.jar;lib\mysql-connector-java-5.1.16-bin.jar" factory.codegen.app.AllSystems
+Args length:	238/32768 chars
+Exit code:	1
+
+
+CmdLine:	C:\Users\John Mwai\Documents\NetBeansProjects\Enterprise Projects\Joomla Extension Factory\launch4j\Joomla Extension Factory.exe --l4j-debug
+WOW64:		no
+Check launcher:	 (n/a)
+64-bit search:	SOFTWARE\JavaSoft\Java Runtime Environment...
+32-bit search:	SOFTWARE\JavaSoft\Java Runtime Environment...
+Ignore:		SOFTWARE\JavaSoft\Java Runtime Environment\1.7
+Match:		SOFTWARE\JavaSoft\Java Runtime Environment\1.7.0_17
+64-bit search:	SOFTWARE\JavaSoft\Java Development Kit...
+32-bit search:	SOFTWARE\JavaSoft\Java Development Kit...
+Ignore:		SOFTWARE\JavaSoft\Java Development Kit\1.7
+Ignore:		SOFTWARE\JavaSoft\Java Development Kit\1.7.0_06
+Ignore:		SOFTWARE\JavaSoft\Java Development Kit\1.7.0_17
+Check launcher:	C:\Program Files\Java\jre7\bin\javaw.exe (OK)
+Unlink:		C:\Program Files\Java\jre7\launch4j-tmp\launch4j.exe
+Unlink:		C:\Program Files\Java\jre7\launch4j-tmp\launch4j.exe.manifest
+Copy:		C:\Program Files\Java\jre7\bin\javaw.exe -> C:\Program Files\Java\jre7\launch4j-tmp\Joomla Extension Factory.exe
+Add classpath:	lib\Fuscard_Libraries.jar
+Add classpath:	lib\mysql-connector-java-5.1.16-bin.jar
+Launcher:	C:\Program Files\Java\jre7\bin\javaw.exe
+Launcher args:	-classpath "C:\Users\John Mwai\Documents\NetBeansProjects\Enterprise Projects\Joomla Extension Factory\launch4j\Joomla Extension Factory.exe;lib\Fuscard_Libraries.jar;lib\mysql-connector-java-5.1.16-bin.jar" factory.codegen.app.AllSystems
+Args length:	238/32768 chars
+Exit code:	1
+
+
+CmdLine:	C:\Users\John Mwai\Documents\NetBeansProjects\Enterprise Projects\Joomla Extension Factory\launch4j\Joomla Extension Factory.exe --l4j-debug
+WOW64:		no
+Check launcher:	 (n/a)
+64-bit search:	SOFTWARE\JavaSoft\Java Runtime Environment...
+32-bit search:	SOFTWARE\JavaSoft\Java Runtime Environment...
+Ignore:		SOFTWARE\JavaSoft\Java Runtime Environment\1.7
+Match:		SOFTWARE\JavaSoft\Java Runtime Environment\1.7.0_17
+64-bit search:	SOFTWARE\JavaSoft\Java Development Kit...
+32-bit search:	SOFTWARE\JavaSoft\Java Development Kit...
+Ignore:		SOFTWARE\JavaSoft\Java Development Kit\1.7
+Ignore:		SOFTWARE\JavaSoft\Java Development Kit\1.7.0_06
+Ignore:		SOFTWARE\JavaSoft\Java Development Kit\1.7.0_17
+Check launcher:	C:\Program Files\Java\jre7\bin\javaw.exe (OK)
+Unlink:		C:\Program Files\Java\jre7\launch4j-tmp\launch4j.exe
+Unlink:		C:\Program Files\Java\jre7\launch4j-tmp\launch4j.exe.manifest
+Copy:		C:\Program Files\Java\jre7\bin\javaw.exe -> C:\Program Files\Java\jre7\launch4j-tmp\Joomla Extension Factory.exe
+Add classpath:	lib\Fuscard_Libraries.jar
+Add classpath:	lib\mysql-connector-java-5.1.16-bin.jar
+Launcher:	C:\Program Files\Java\jre7\bin\javaw.exe
+Launcher args:	-classpath "C:\Users\John Mwai\Documents\NetBeansProjects\Enterprise Projects\Joomla Extension Factory\launch4j\Joomla Extension Factory.exe;lib\Fuscard_Libraries.jar;lib\mysql-connector-java-5.1.16-bin.jar" factory.codegen.app.AllSystems
+Args length:	238/32768 chars
+Exit code:	1
+
+
+CmdLine:	C:\Users\John Mwai\Documents\NetBeansProjects\Enterprise Projects\Joomla Extension Factory\launch4j\Joomla Extension Factory.exe --l4j-debug
+WOW64:		no
+Check launcher:	 (n/a)
+64-bit search:	SOFTWARE\JavaSoft\Java Runtime Environment...
+32-bit search:	SOFTWARE\JavaSoft\Java Runtime Environment...
+Ignore:		SOFTWARE\JavaSoft\Java Runtime Environment\1.7
+Match:		SOFTWARE\JavaSoft\Java Runtime Environment\1.7.0_17
+64-bit search:	SOFTWARE\JavaSoft\Java Development Kit...
+32-bit search:	SOFTWARE\JavaSoft\Java Development Kit...
+Ignore:		SOFTWARE\JavaSoft\Java Development Kit\1.7
+Ignore:		SOFTWARE\JavaSoft\Java Development Kit\1.7.0_06
+Ignore:		SOFTWARE\JavaSoft\Java Development Kit\1.7.0_17
+Check launcher:	C:\Program Files\Java\jre7\bin\javaw.exe (OK)
+Add classpath:	lib\Fuscard_Libraries.jar
+Add classpath:	lib\mysql-connector-java-5.1.16-bin.jar
+Launcher:	C:\Program Files\Java\jre7\bin\javaw.exe
+Launcher args:	-classpath "C:\Users\John Mwai\Documents\NetBeansProjects\Enterprise Projects\Joomla Extension Factory\launch4j\Joomla Extension Factory.exe;lib\Fuscard_Libraries.jar;lib\mysql-connector-java-5.1.16-bin.jar" factory.codegen.app.AllSystems
+Args length:	238/32768 chars
+Exit code:	259
+
+
+CmdLine:	C:\Users\John Mwai\Documents\NetBeansProjects\Enterprise Projects\Joomla Extension Factory\launch4j\Joomla Extension Factory.exe --l4j-debug
+WOW64:		no
+Check launcher:	 (n/a)
+64-bit search:	SOFTWARE\JavaSoft\Java Runtime Environment...
+32-bit search:	SOFTWARE\JavaSoft\Java Runtime Environment...
+Ignore:		SOFTWARE\JavaSoft\Java Runtime Environment\1.7
+Match:		SOFTWARE\JavaSoft\Java Runtime Environment\1.7.0_17
+64-bit search:	SOFTWARE\JavaSoft\Java Development Kit...
+32-bit search:	SOFTWARE\JavaSoft\Java Development Kit...
+Ignore:		SOFTWARE\JavaSoft\Java Development Kit\1.7
+Ignore:		SOFTWARE\JavaSoft\Java Development Kit\1.7.0_06
+Ignore:		SOFTWARE\JavaSoft\Java Development Kit\1.7.0_17
+Check launcher:	C:\Program Files\Java\jre7\bin\javaw.exe (OK)
+Add classpath:	lib\Fuscard_Libraries.jar
+Add classpath:	lib\mysql-connector-java-5.1.16-bin.jar
+Launcher:	C:\Program Files\Java\jre7\bin\javaw.exe
+Launcher args:	-classpath "C:\Users\John Mwai\Documents\NetBeansProjects\Enterprise Projects\Joomla Extension Factory\launch4j\Joomla Extension Factory.exe;lib\Fuscard_Libraries.jar;lib\mysql-connector-java-5.1.16-bin.jar" factory.codegen.app.AllSystems
+Args length:	238/32768 chars
+Exit code:	259
+
+
+CmdLine:	C:\Users\John Mwai\Documents\NetBeansProjects\Enterprise Projects\Joomla Extension Factory\launch4j\Joomla Extension Factory.exe --l4j-debug
+WOW64:		no
+Check launcher:	 (n/a)
+64-bit search:	SOFTWARE\JavaSoft\Java Runtime Environment...
+32-bit search:	SOFTWARE\JavaSoft\Java Runtime Environment...
+Ignore:		SOFTWARE\JavaSoft\Java Runtime Environment\1.7
+Match:		SOFTWARE\JavaSoft\Java Runtime Environment\1.7.0_17
+64-bit search:	SOFTWARE\JavaSoft\Java Development Kit...
+32-bit search:	SOFTWARE\JavaSoft\Java Development Kit...
+Ignore:		SOFTWARE\JavaSoft\Java Development Kit\1.7
+Ignore:		SOFTWARE\JavaSoft\Java Development Kit\1.7.0_06
+Ignore:		SOFTWARE\JavaSoft\Java Development Kit\1.7.0_17
+Check launcher:	C:\Program Files\Java\jre7\bin\javaw.exe (OK)
+Add classpath:	lib\Fuscard_Libraries.jar
+Add classpath:	lib\mysql-connector-java-5.1.16-bin.jar
+Launcher:	C:\Program Files\Java\jre7\bin\javaw.exe
+Launcher args:	-classpath "C:\Users\John Mwai\Documents\NetBeansProjects\Enterprise Projects\Joomla Extension Factory\launch4j\Joomla Extension Factory.exe;lib\Fuscard_Libraries.jar;lib\mysql-connector-java-5.1.16-bin.jar" factory.codegen.app.AllSystems
+Args length:	238/32768 chars
+Exit code:	259
+
+
+CmdLine:	C:\Users\John Mwai\Documents\NetBeansProjects\Enterprise Projects\Joomla Extension Factory\launch4j\Joomla Extension Factory.exe --l4j-debug
+WOW64:		no
+Check launcher:	 (n/a)
+64-bit search:	SOFTWARE\JavaSoft\Java Runtime Environment...
+32-bit search:	SOFTWARE\JavaSoft\Java Runtime Environment...
+Ignore:		SOFTWARE\JavaSoft\Java Runtime Environment\1.7
+Match:		SOFTWARE\JavaSoft\Java Runtime Environment\1.7.0_17
+64-bit search:	SOFTWARE\JavaSoft\Java Development Kit...
+32-bit search:	SOFTWARE\JavaSoft\Java Development Kit...
+Ignore:		SOFTWARE\JavaSoft\Java Development Kit\1.7
+Ignore:		SOFTWARE\JavaSoft\Java Development Kit\1.7.0_06
+Ignore:		SOFTWARE\JavaSoft\Java Development Kit\1.7.0_17
+Check launcher:	C:\Program Files\Java\jre7\bin\javaw.exe (OK)
+
+
+CmdLine:	C:\Users\John Mwai\Documents\NetBeansProjects\Enterprise Projects\Joomla Extension Factory\launch4j\Joomla Extension Factory.exe --l4j-debug
+WOW64:		no
+Check launcher:	 (n/a)
+64-bit search:	SOFTWARE\JavaSoft\Java Runtime Environment...
+32-bit search:	SOFTWARE\JavaSoft\Java Runtime Environment...
+Ignore:		SOFTWARE\JavaSoft\Java Runtime Environment\1.7
+Match:		SOFTWARE\JavaSoft\Java Runtime Environment\1.7.0_17
+64-bit search:	SOFTWARE\JavaSoft\Java Development Kit...
+32-bit search:	SOFTWARE\JavaSoft\Java Development Kit...
+Ignore:		SOFTWARE\JavaSoft\Java Development Kit\1.7
+Ignore:		SOFTWARE\JavaSoft\Java Development Kit\1.7.0_06
+Ignore:		SOFTWARE\JavaSoft\Java Development Kit\1.7.0_17
+Check launcher:	C:\Program Files\Java\jre7\bin\javaw.exe (OK)
+
+
+CmdLine:	C:\Users\John Mwai\Documents\NetBeansProjects\Enterprise Projects\Joomla Extension Factory\launch4j\Joomla Extension Factory.exe --l4j-debug
+WOW64:		no
+Check launcher:	 (n/a)
+64-bit search:	SOFTWARE\JavaSoft\Java Runtime Environment...
+32-bit search:	SOFTWARE\JavaSoft\Java Runtime Environment...
+Ignore:		SOFTWARE\JavaSoft\Java Runtime Environment\1.7
+Match:		SOFTWARE\JavaSoft\Java Runtime Environment\1.7.0_17
+64-bit search:	SOFTWARE\JavaSoft\Java Development Kit...
+32-bit search:	SOFTWARE\JavaSoft\Java Development Kit...
+Ignore:		SOFTWARE\JavaSoft\Java Development Kit\1.7
+Ignore:		SOFTWARE\JavaSoft\Java Development Kit\1.7.0_06
+Ignore:		SOFTWARE\JavaSoft\Java Development Kit\1.7.0_17
+Check launcher:	C:\Program Files\Java\jre7\bin\javaw.exe (OK)
+Add classpath:	lib\Fuscard_Libraries.jar
+Add classpath:	lib\mysql-connector-java-5.1.16-bin.jar
+Launcher:	C:\Program Files\Java\jre7\bin\javaw.exe
+Launcher args:	-classpath "C:\Users\John Mwai\Documents\NetBeansProjects\Enterprise Projects\Joomla Extension Factory\launch4j\Joomla Extension Factory.exe;lib\Fuscard_Libraries.jar;lib\mysql-connector-java-5.1.16-bin.jar" factory.codegen.app.AllSystems
+Args length:	238/32768 chars
+Exit code:	259

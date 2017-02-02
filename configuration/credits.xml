@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><root>
+    <credits>
+        <credit>
+            <Name>
+                JEHOVAH
+            </Name>
+            <role>
+                Almighty GOD and Creator of Heaven and Earth
+            </role>
+            <order>
+                1
+            </order>
+            <narrative>
+                This far I have come it is because of YOU.
+            </narrative>
+        </credit>
+        <credit>
+            <Name>
+                Joseph Muraguri
+            </Name>
+            <role>
+                Dad
+            </role>
+            <order>
+                3
+            </order>
+            <narrative>
+                You have been my supporter in everything. What I owe to you can fill a book and then some.
+            </narrative>
+        </credit>
+        <credit>
+            <Name>
+                Margaret Nyambura
+            </Name>
+            <role>
+                Mum
+            </role>
+            <order>
+                4
+            </order>
+            <narrative>
+                Thank you for being by my side all my life.
+            </narrative>
+        </credit>
+        <credit>
+            <Name>
+                Eng. Peter Njoroge
+            </Name>
+            <role>
+                Uncle, MD Geomatics CES ltd
+            </role>
+            <order>
+                5
+            </order>
+            <narrative>
+                You have inspired me to aim high.
+            </narrative>
+        </credit>
+        <credit>
+            <Name>
+                James Karuri
+            </Name>
+            <role>
+                CEO Mambo Microsystems
+            </role>
+            <order>
+                6
+            </order>
+            <narrative>
+                You introduced me to the Joomla! environment.
+            </narrative>
+        </credit>
+        <credit>
+            <Name>
+                Margaret Wakini
+            </Name>
+            <role>
+                Fiancee, Software Dedicatee
+            </role>
+            <order>
+                2
+            </order>
+            <narrative>
+                You complete my life. That is why I am dedicating this software to you. You waited tirelessly for me. You are amazing honey.
+            </narrative>
+        </credit>
+        <credit>
+            <Name>
+                John Mwenda yaani Jawnie
+            </Name>
+            <role>
+                Friend
+            </role>
+            <order>
+                7
+            </order>
+            <narrative>
+                You got me interested in web technologies.
+            </narrative>
+        </credit>
+        <credit>
+            <Name>
+                Magdaline Wakini 
+            </Name>
+            <role>
+                Sister
+            </role>
+            <order>
+                8
+            </order>
+            <narrative>
+                You have always seen merit in my ideas and works. You are an awesome siz.
+            </narrative>
+        </credit>
+        <credit>
+            <Name>
+                Ernest Mugo
+            </Name>
+            <role>
+                Brother
+            </role>
+            <order>
+                9
+            </order>
+            <narrative>
+                You are an awesome brother.
+            </narrative>
+        </credit>
+        <credit>
+            <Name>
+                Margaret Nduta
+            </Name>
+            <role>
+                Sister
+            </role>
+            <order>
+                10
+            </order>
+            <narrative>
+                You are an amazing siz.
+            </narrative>
+        </credit>
+        <credit>
+            <Name>
+                Macdonald Chabuga &amp; Joel Mwita
+            </Name>
+            <role>
+                Room mates
+            </role>
+            <order>
+                11
+            </order>
+            <narrative>
+                Thank you for putting up with my late night software development escapades! You are amazing room mates.
+            </narrative>
+        </credit>
+        <credit>
+            <Name>
+                Chuka University
+            </Name>
+            <role>
+                University
+            </role>
+            <order>
+                12
+            </order>
+            <narrative>
+                I am grateful for the opportunity I have gained by taking BSc. Computer Science in this institution.
+                More so the intellectual challenge and opportunity of developing software to touch lives. Special thanks 
+                to the Computer Science Department.
+            </narrative>
+        </credit>
+        
+    </credits>
+</root>

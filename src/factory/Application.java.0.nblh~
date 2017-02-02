@@ -1,0 +1,348 @@
+package factory;
+
+import factory.Application.Project.Vendor;
+import factory.component.Component;
+import java.io.IOException;
+import java.util.HashMap;
+import java.util.LinkedList;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
+/**
+ * <p/>
+ * CONFIDENTIAL PROPRIETARY: FUSCARD<br/>Copyright (c) 2012 Fuscard. All rights
+ * reserved.<br/> Creation time: Oct 20, 2012 -- 12:22:08 PM<br/>
+ * <p/>
+ * @author John Mwai
+ */
+public class Application {
+
+    private LinkedList<Project> projects = new LinkedList<Project>();
+    private static final String setUpProperties = "C:\\Joomla Extension Factory\\setup.jefsu.ini";
+
+    public Project newProject(Project.ProjectTypes type) {
+        switch (type) {
+            case Component:
+                Component c = new Component();
+                projects.add(c);
+                return new Component();
+            default:
+                throw new UnsupportedOperationException(
+                        "Project type '" + type.name() + "' is not supported yet.");
+        }
+    }
+
+    public static HashMap<String, String> getIDEProperties() {
+        INIInputOutput ini = new INIInputOutput(setUpProperties);
+        try {
+            return ini.getIniData();
+        } catch (IOException ex) {
+            Logger.getLogger(Application.class.getName()).log(Level.SEVERE, null,
+                    ex);
+        }
+        return new HashMap<String, String>();
+    }
+
+    public static void saveIDEProperties(HashMap<String, String> props) {
+        INIInputOutput ini = new INIInputOutput(setUpProperties);
+        try {
+            ini.save(props);
+        } catch (IOException ex) {
+            Logger.getLogger(Application.class.getName()).log(Level.SEVERE, null,
+                    ex);
+        }
+    }
+
+    public static void saveIDEProperty(String key, String value) {
+        INIInputOutput ini = new INIInputOutput(setUpProperties);
+        ini.save(key, value);
+    }
+
+    public void addProjectToList(Project project) {
+        projects.add(project);
+    }
+
+    public LinkedList<Project> getProjects() {
+        return projects;
+    }
+
+    public static IDEProperties getIDEPreferences() {
+        INIInputOutput ini = new INIInputOutput(setUpProperties);
+        HashMap<String, String> map;
+        try {
+            map = ini.getIniData();
+        } catch (IOException ex) {
+            Logger.getLogger(Application.class.getName()).log(Level.SEVERE, null,
+                    ex);
+            return null;
+        }
+        IDEProperties res = new IDEProperties();
+        Vendor v = new Vendor();
+        v.setName(map.get("vendor"));
+        v.setEmail(map.get("vendor_email"));
+        v.setUrl(map.get("vendor_url"));
+        res.setVendor(v);
+        res.setCopyrightInfo(map.get("copyright_info"));
+        res.setReleaseIndex(Integer.parseInt(map.get("release_index")));
+        res.setVersion(new Version(map.get("release_version")));
+        res.setVersionStringLength(Integer.parseInt(map.get(
+                "version_string_length")));
+        res.setImagesFolder(map.get("default_images_folder"));
+        res.setBaseDir(map.get("root_directory"));
+        res.setProjectFamily(map.get("default_project_family"));
+        return res;
+    }
+
+    public static void saveIDEProperties(IDEProperties properties) {
+        HashMap<String, String> map = new HashMap<String, String>();
+        map.put("vendor", properties.vendor.getName());
+        map.put("vendor_url", properties.vendor.getUrl());
+        map.put("root_directory", properties.baseDir);
+        map.put("vendor_email", properties.vendor.getEmail());
+        map.put("default_project_family", properties.projectFamily);
+        map.put("copyright_info", properties.copyrightInfo);
+        map.put("release_index", String.valueOf(properties.releaseIndex));
+        map.put("release_version", String.valueOf(properties.version.version));
+        map.put("version_string_length", String.valueOf(
+                properties.versionStringLength));
+        map.put("default_images_folder", properties.imagesFolder);
+        INIInputOutput ini = new INIInputOutput(setUpProperties);
+        try {
+            ini.save(map);
+        } catch (IOException ex) {
+            Logger.getLogger(Application.class.getName()).log(Level.SEVERE, null,
+                    ex);
+        }
+    }
+
+    public static class IDEProperties {
+
+        private String copyrightInfo;
+        private Project.Vendor vendor;
+        private String imagesFolder;
+        private Version version;
+        private int versionStringLength;
+        private int releaseIndex;
+        private String baseDir;
+        private String projectFamily;
+
+        public String getProjectFamily() {
+            return projectFamily;
+        }
+
+        public void setProjectFamily(String projectFamily) {
+            this.projectFamily = projectFamily;
+        }
+
+        public String getBaseDir() {
+            return baseDir;
+        }
+
+        public void setBaseDir(String baseDir) {
+            this.baseDir = baseDir;
+        }
+
+        public String getCopyrightInfo() {
+            return copyrightInfo;
+        }
+
+        public String getImagesFolder() {
+            return imagesFolder;
+        }
+
+        public int getReleaseIndex() {
+            return releaseIndex;
+        }
+
+        public Vendor getVendor() {
+            return vendor;
+        }
+
+        public Version getVersion() {
+            return version;
+        }
+
+        public int getVersionStringLength() {
+            return versionStringLength;
+        }
+
+        public void setCopyrightInfo(String copyrightInfo) {
+            this.copyrightInfo = copyrightInfo;
+        }
+
+        public void setImagesFolder(String imagesFolder) {
+            this.imagesFolder = imagesFolder;
+        }
+
+        public void setReleaseIndex(int releaseIndex) {
+            this.releaseIndex = releaseIndex;
+        }
+
+        public void setVendor(Vendor vendor) {
+            this.vendor = vendor;
+        }
+
+        public void setVersion(Version version) {
+            this.version = version;
+        }
+
+        public void setVersionStringLength(int versionStringLength) {
+            this.versionStringLength = versionStringLength;
+        }
+    }
+
+    public abstract static class Project {
+
+        private String CopyrightInfo;
+        private int releaseIndex;
+        private String description;
+        private String homeDirectory;
+        private Version version;
+        private Vendor vendor;
+        private Client client;
+        private String installerName;
+        private String projectName;
+        private String imagesFolder;
+
+        public enum ProjectTypes {
+
+            Component,
+            Module,
+            Template
+        }
+
+        public static class Party {
+
+            private String name;
+            private String url;
+            private String email;
+
+            public String getName() {
+                return name;
+            }
+
+            public String getEmail() {
+                return email;
+            }
+
+            public String getUrl() {
+                return url;
+            }
+
+            public void setName(String name) {
+                this.name = name;
+            }
+
+            public void setEmail(String email) {
+                this.email = email;
+            }
+
+            public void setUrl(String url) {
+                this.url = url;
+            }
+        }
+
+        public static class Vendor extends Party {
+        }
+
+        public static class Client extends Party {
+        }
+
+        public String getInstallerName() {
+            return installerName;
+        }
+
+        public void setInstallerName(String installerName) {
+            this.installerName = installerName;
+        }
+
+        public String getProjectName() {
+            return projectName;
+        }
+
+        public void setProjectName(String projectName) {
+            this.projectName = projectName;
+        }
+
+        public String getCopyrightInfo() {
+            return CopyrightInfo;
+        }
+
+        public void setCopyrightInfo(String CopyrightInfo) {
+            this.CopyrightInfo = CopyrightInfo;
+        }
+
+        public Client getClient() {
+            return client;
+        }
+
+        public void setClient(Client client) {
+            this.client = client;
+        }
+
+        public String getDescription() {
+            return description;
+        }
+
+        public void setDescription(String description) {
+            this.description = description;
+        }
+
+        public String getHomeDirectory() {
+            return homeDirectory;
+        }
+
+        public void setHomeDirectory(String homeDirectory) {
+            this.homeDirectory = homeDirectory;
+        }
+
+        public int getReleaseIndex() {
+            return releaseIndex;
+        }
+
+        public void setReleaseIndex(int releaseIndex) {
+            this.releaseIndex = releaseIndex;
+        }
+
+        public Vendor getVendor() {
+            return vendor;
+        }
+
+        public void setVendor(Vendor vendor) {
+            this.vendor = vendor;
+        }
+
+        public Version getVersion() {
+            return version;
+        }
+
+        public void setVersion(Version version) {
+            this.version = version;
+        }
+
+        public String getImagesFolder() {
+            return imagesFolder;
+        }
+
+        public void setImagesFolder(String imagesFolder) {
+            this.imagesFolder = imagesFolder;
+        }
+    }
+
+    public static class Version {
+
+        private String version;
+
+        public Version(String version) {
+            setVersion(version);
+        }
+
+        public final void setVersion(String version) {
+            this.version = version;
+        }
+
+        public String getVersion() {
+            return version;
+        }
+    }
+}

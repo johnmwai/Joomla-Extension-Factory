@@ -1,0 +1,370 @@
+options {
+JAVA_UNICODE_ESCAPE = true;
+
+  STATIC=false; 
+  MULTI=true;
+  VISITOR=true;
+  NODE_USES_PARSER=true;
+  NODE_FACTORY = true;
+  ERROR_REPORTING = false;
+  IGNORE_CASE = true;
+}
+
+
+PARSER_BEGIN(CSSParser)
+package css;
+
+/**
+ * Grammar to parse CSS Style
+ * @author Daniel Dus - based on http://www.w3.org/TR/CSS21/grammar.htm
+ */
+public class CSSParser
+{
+
+
+}
+
+PARSER_END(CSSParser)
+
+JAVACODE
+void error_skipto(int kind) {
+  ParseException e = generateParseException();  // generate the exception object.
+  System.err.println(e.toString());  // print the error message
+  Token t;
+  do {
+    t = getNextToken();
+  } while (t.kind != kind);
+    // The above loop consumes tokens all the way up to a token of
+    // "kind".  We use a do-while loop rather than a while because the
+    // current token is the one immediately before the erroneous token
+    // (in our case the token immediately before what should have been
+    // "if"/"while".
+}
+
+/* LEXER RULES */
+
+// White space to ignore
+SPECIAL_TOKEN:
+{
+  " "
+| "\t"
+| "\n"
+| "\r"
+| "\f"
+}
+
+// Comments
+MORE:
+{
+        < "<!--" ~["-"] > : IN_MULTI_COMMENT
+}
+
+SPECIAL_TOKEN:
+{
+  <SINGLE_LINE_COMMENT: "/*" (~["\n", "\r"])* ("\n" | "\r" | "\r\n")? >
+}
+
+<IN_MULTI_COMMENT>
+SPECIAL_TOKEN:
+{
+        <MULTI_COMMENT: "-->" > : DEFAULT
+}
+
+
+TOKEN:
+{
+        <CHARSET_SYM: "@charset ">
+    |<IMPORT_SYM: "@import" >
+    |<MEDIA_SYM: "@media" >
+    |<PAGE_SYM: "@page" >
+    |<HASH: "#">
+    |<SEPARATOR: ";">
+}
+
+
+TOKEN:
+{
+    <INCLUDES: "~=">
+   |<DASHMATCH: "|=">
+   |<PLUS: "+">
+   |<MINUS: "-">
+   |<LPAREN: "(">
+   |<RPAREN: ")">
+   |<LBRACE: "{">
+   |<RBRACE: "}">
+   |<COMMA: ",">
+   |<COLON: ":">
+   |<SLASH: "/">
+   |<ALLGROUP: "*">
+   |<GT: ">">
+
+}
+
+/* LITERALS */
+
+TOKEN :
+{
+  < IDENT: (["-"])? <LETTER> (<PART_LETTER>)* >
+|
+ <IMPORTANT_SYM: "!" (<PART_LETTER>)* "important" > 
+|
+  < #LETTER:
+      [  
+         "A"-"Z",
+         "_",
+         "a"-"z"
+      ]
+  >
+|
+  < #PART_LETTER:
+      [  
+         "0"-"9",
+         "A"-"Z",
+         "_",
+         "a"-"z"
+      ]
+  >
+}
+
+
+TOKEN :
+{
+
+ <NUMBER: <NUMBER_LITERAL>  (["l"])?>
+ |
+ <EMS: <NUMBER_LITERAL> "em" >
+ |
+ <EXS: <NUMBER_LITERAL> "ex" >
+ |
+ < PERCENTAGE: <NUMBER_LITERAL> "%" >
+|
+  < LENGTH: <NUMBER_LITERAL> ("px" | "cm" | "mm" | "in" | "pt" | "pc" ) >
+|
+  < ANGLE: <NUMBER_LITERAL> ("deg" | "rad" | "grad" ) >
+|
+  < TIME: <NUMBER_LITERAL> ("s" | "ms" ) >
+|
+ < FREQ: <NUMBER_LITERAL> ("hz" | "khz" ) >
+|
+< #NUMBER_LITERAL: ["1"-"9"] (["0"-"9"])* ["."] (["0"-"9"])*  >
+|
+<URI: "url" "(" (<CHAR_LITERAL> | <STRING_LITERAL>) ")">
+|
+<STRING : < STRING_LITERAL> | <CHAR_LITERAL> >
+|
+< #CHAR_LITERAL:
+      "'"
+      (   (~["'","\\","\n","\r"])
+        | ("\\"
+            ( ["n","t","b","r","f","\\","'","\""]
+            | ["0"-"7"] ( ["0"-"7"] )?
+            | ["0"-"3"] ["0"-"7"] ["0"-"7"]
+            )
+          )
+        | ("\\u"
+                ["0"-"9","A"-"F","a"-"f"]
+                ["0"-"9","A"-"F","a"-"f"]
+                ["0"-"9","A"-"F","a"-"f"]
+                ["0"-"9","A"-"F","a"-"f"]
+                        ["0"-"9","A"-"F","a"-"f"]
+                        ["0"-"9","A"-"F","a"-"f"]
+                        ["0"-"9","A"-"F","a"-"f"]
+                        ["0"-"9","A"-"F","a"-"f"]
+          )
+                | ("\\x"
+                        ["0"-"9","A"-"F","a"-"f"]
+                ["0"-"9","A"-"F","a"-"f"]
+                ["0"-"9","A"-"F","a"-"f"]
+                ["0"-"9","A"-"F","a"-"f"]
+                  )
+      )
+      "'"
+  >
+|
+  < #STRING_LITERAL:
+      "\""
+      (   (~["\"","\\","\n","\r"])
+        | ("\\"
+            ( ["n","t","b","r","f","\\","'","\""]
+            | ["0"-"7"] ( ["0"-"7"] )?
+            | ["0"-"3"] ["0"-"7"] ["0"-"7"]
+            )
+          )
+        | ("\\u"
+                ["0"-"9","A"-"F","a"-"f"]
+                ["0"-"9","A"-"F","a"-"f"]
+                ["0"-"9","A"-"F","a"-"f"]
+                ["0"-"9","A"-"F","a"-"f"]
+          )
+      )*
+      "\""
+  >
+  
+}
+
+
+
+ASTstylesheet stylesheet() :
+{
+}
+{try{  
+    [<CHARSET_SYM> <STRING> ";"] 
+    ( css_import()  | ruleset() | media() | page() )*
+        <EOF>      }      catch (ParseException e)
+  {
+    error_skipto(EOF);
+  } 
+  {
+    return jjtThis;
+  }
+}
+
+void singleStyle() :
+{}
+{
+    declaration() ( ";" declaration() )* <EOF>
+}
+
+
+void css_import() :
+{}
+{
+        <IMPORT_SYM> (<STRING>|<URI>) [media_list()] ";"
+
+}
+
+void media() :
+{}
+{
+        <MEDIA_SYM> media_list() "{" (ruleset())* "}"
+}
+
+void media_list() :
+{}
+{
+        <IDENT> [<COMMA> <IDENT>]
+}
+
+void page() :
+{}
+{
+        <PAGE_SYM> [pageID()] "{" declaration() (";" declaration())* "}"
+}
+
+void pageID() :
+{}
+{
+        ":" <IDENT>
+}
+
+
+void operator_expr() :
+{}
+{
+        "/" | ","
+}
+
+void combinator() :
+{}
+{
+        "+" | ">"
+}
+
+void unary_operator() :
+{}
+{
+   "-" | "+"
+
+}
+
+void ruleset() :
+{}
+{
+  selector() ( "," selector() )* "{" declaration() ( ";" declaration() )* "}"
+
+}
+
+void selector() :
+{}
+{
+  simple_selector() [ combinator() selector() /*| [ [combinator()] selector() ] */]
+}
+
+void simple_selector() :
+{}
+{
+  element_name() /* ( <HASH> | class_ident() | attrib() | pseudo() )*  */
+  | ( <HASH> | class_ident() | attrib() | pseudo() )+
+}
+
+void class_ident() :
+{}
+{
+  "." <IDENT>
+}
+ 
+void element_name() :
+{}
+{
+  <IDENT> | "*"
+}
+
+void attrib() :
+{}
+{
+  "[" <IDENT> [ ( "=" | <INCLUDES> | <DASHMATCH> ) ( <IDENT> | <STRING> ) ] "]"
+}
+
+void pseudo() :
+{}
+{
+   ":" [LOOKAHEAD(2) <IDENT> | function_expr() ]
+}
+
+void declaration() :
+{}
+{
+  <IDENT> ":" expr() [<IMPORTANT_SYM>]
+}
+
+void expr() :
+{}
+{
+  term() ( [operator_expr()] term() )*
+}
+
+void term() :
+{}
+{
+  [unary_operator()]  
+   <NUMBER>  
+    | <PERCENTAGE>  
+    | <LENGTH>  
+    | <EMS>  
+    | <EXS>  
+    | <ANGLE>  
+    | <TIME>  
+    | <FREQ>  
+    | <STRING>  
+   | LOOKAHEAD(2) <IDENT>  
+   | <URI>  
+   | <HASH> 
+   | function_expr()
+}
+
+
+void function_expr() :
+{}
+{
+    <IDENT> "(" expr() ")"
+}
+
+/*
+ * There is a constraint on the color that it must
+ * have either 3 or 6 hex-digits (i.e., [0-9a-fA-F])
+ * after the "#"; e.g., "#000" is OK, but "#abcd" is not.
+ 
+hexcolor
+  : HASH 
+  ;
+  */

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><root>
+    <app-name>braviacart</app-name>
+    <author>John Mwai</author>
+    <author-email>mwaimuragz@gmail.com</author-email>
+    <author-website>http://fuscard.com</author-website>
+    <copyright>copyright (c) Fuscard inc 2013 all rights reserved</copyright>
+    <joomla-directory>C:\wamp\www\testing_joomla</joomla-directory>
+    <licence>commercial</licence>
+    <summary>Component generated with Joomla Extension Factory
+
+
+
+) == "clientarea") {
+            require_once( JPATH_COMPONENT . DS . 'controllers' . DS . 'clientarea.php' );
+            $controllerName = 'BraviaCartControllerClientArea';
+            $controller = new $controllerName();
+            $res = $controller-&gt;execute('process');
+            $mess = "";
+            switch ($res) {
+                case "GUEST":
+
+                    $mess = "Please log in to continue";
+                    $app-&gt;enqueueMessage($mess);
+                    $redirectUrl = "index.php?option=com_braviacart&amp;view=clientarea";
+                    $redirectUrl = urlencode(base64_encode($redirectUrl));
+                    $redirectUrl = '&amp;return=' . $redirectUrl;
+                    $finalUrl = "index.php?option=com_users&amp;view=login$redirectUrl";
+                    $this-&gt;setRedirect($finalUrl);
+                    break;
+                case "LOGGED_IN_NON_CUST":
+                    $app-&gt;enqueueMes</summary>
+    <version>1.0.0</version>
+    <release-index>4</release-index>
+<license>Commercial</license></root>

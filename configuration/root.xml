@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><root>
+    <config-location>configuration\config.xml</config-location>
+    <parser-config>configuration\parser.xml</parser-config>
+    <credits>configuration\credits.xml</credits>
+    <theme>Clarity Black &amp; White</theme>
+    <open_files/>
+    <selected_file/>
+    <open_projects><project>/home/john/Documents\Test project.jefp</project><project>/home/john/Documents\xdfgserge.jefp</project></open_projects>
+    <last_opened_project>C:\Users\John Mwai\Documents\jef projects\braviacart.jefp</last_opened_project>
+    <recent_projects/>
+    <design>
+        <canvas>
+            <preferred_height>500</preferred_height>
+            <preferred_width>1000</preferred_width>
+            <preferred_background>-3355393</preferred_background>
+        </canvas>
+    </design>
+    <enabled_parsers><parser>java</parser><parser>java</parser></enabled_parsers>
+<update_server>/home/john/Documents</update_server></root>

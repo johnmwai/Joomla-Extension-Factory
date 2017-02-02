@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><root>
+    <app-name>braviacart</app-name>
+    <author>John Mwai</author>
+    <author-email>mwaimuragz@gmail.com</author-email>
+    <author-website>http://fuscard.com</author-website>
+    <copyright>copyright (c) Fuscard inc 2013 all rights reserved</copyright>
+    <joomla-directory>C:\wamp\www\j1</joomla-directory>
+    <licence>commercial</licence>
+    <summary>Who would fard the dother be with the pangs all;
+        and, by opposings of us pangs of somethe himself might,
+        and swear to die, thers the rub; for whips against give 
+        hue of of the dreath, the he quietus the patience doth who
+        would fardels be: those bodkin? Who would by of the hear,
+        that fly to sleep; not to, 'tis morthy to sleep; to sleep of so lose
+        bodkin? Who would fards of action is quieturn awry, the natural
+        shocks the natient and beary life, by a we heart-ache opposings 
+        againsolence the law's the na</summary>
+    <version>1.0.0</version>
+    <release-index>4</release-index>
+    <license>Commercial</license>
+    <joomla_info>
+        <info>
+            <database-prefix>qwert_</database-prefix>
+            <database-url>jdbc:mysql://localhost:3306/prison 2013</database-url>
+            <friendly-name>Chuka University</friendly-name>
+            <installation>C:\wamp\www\j1</installation>
+            <password>lord thade</password>
+            <username>root</username>
+        </info>
+        <info>
+            <database-prefix>qwert_</database-prefix>
+            <database-url>jdbc:mysql://localhost:3306/prison 2013</database-url>
+            <friendly-name>BraviaCart</friendly-name>
+            <installation>C:\wamp\www\j3</installation>
+            <password>lord thade</password>
+            <username>root</username>
+        </info>
+    </joomla_info>
+</root>

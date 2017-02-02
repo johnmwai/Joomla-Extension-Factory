@@ -1,0 +1,9 @@
+/**
+ * JJTree template file created by SF JavaCC plugin 1.5.17+ wizard for JavaCC 1.5.0+
+ */options{  STATIC = false;  MULTI = true;}PARSER_BEGIN(BNF2JavaCC)package BNF2JavaCC.parser;public class BNF2JavaCC{}PARSER_END(BNF2JavaCC)SPECIAL_TOKEN :{  " "| "\t"| "\n"| "\r"| < "//" (~[ "\n", "\r" ])*    (      "\n"    | "\r"    | "\r\n"    ) >| < "/*" (~[ "*" ])* "*"    (      ~[ "/" ] (~[ "*" ])* "*"    )*    "/" >}TOKEN :{  < LABEL : < ID_FIRST_LETTER > (< OTHER_LETTERS >)* >| < #ID_FIRST_LETTER : [ "a"-"z", "A"-"Z" ] >| < #OTHER_LETTERS :    (      < ID_FIRST_LETTER >    | [ "0"-"9" ]    ) >}ASTGrammar Grammar() :{}{  try  {   (
+     Rule()   )*  }  catch (ParseException ex)  {    throw new IllegalStateException("Parsing failed");  }  {    return jjtThis;  }}
+
+void Rule():{}{
+   NonTerminal() "::=" Production()}void NonTerminal() :{}{  < LABEL >}
+
+void  Production():{}{}

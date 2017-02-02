@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><root>
+    <config-location>C:\Users\John Mwai\Documents\NetBeansProjects\Enterprise Projects\Joomla Extension Factory\configuration\config.xml</config-location>
+    <parser-config>configuration\parser.xml</parser-config>
+    <credits>configuration\credits.xml</credits>
+    <theme>Clarity White &amp; Black</theme>
+</root>

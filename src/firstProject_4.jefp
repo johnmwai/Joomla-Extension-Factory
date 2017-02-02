@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><jef_project>
+<app-name>braviacart</app-name><author>John Mwai</author><author-email>mwaimuragz@gmail.com</author-email><author-website>http://fuscard.com</author-website><copyright>copyright (c) Fuscard inc 2013 all rights reserved</copyright><joomla-directory>C:\wamp\www\j1</joomla-directory><license>Commercial</license><summary>Component generated with Joomla Extension Factory
+
+
+
+) == "clientarea") {
+            require_once( JPATH_COMPONENT . DS . 'controllers' . DS . 'clientarea.php' );
+            $c</summary><version>1.0.0</version><release-index>4</release-index></jef_project>
